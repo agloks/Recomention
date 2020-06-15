@@ -24,6 +24,11 @@ app.config['UPLOAD_FOLDER'] = 'data/'
 app.config['THUMBNAIL_FOLDER'] = 'data/thumbnail/'
 app.config['MAX_CONTENT_LENGTH'] = 20 * 1024 * 1024
 
+#ONLY FOR DEVELOPMENT
+app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
+app.jinja_env.auto_reload = True
+app.config['TEMPLATES_AUTO_RELOAD'] = True
+
 ALLOWED_EXTENSIONS = set(['txt', 'jpg', 'jpeg',
                         'doc', 'docx', 'csv', 'xsxl'])
 IGNORED_FILES = set(['.gitignore'])
@@ -116,4 +121,5 @@ def shutdown():
         client.disconnect()
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=port)
+    app.run(host='0.0.0.0', port=port, debug=True)
+    # app.run(host='0.0.0.0', port=port)

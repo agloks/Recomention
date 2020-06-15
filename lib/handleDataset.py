@@ -5,28 +5,7 @@ import os
 class SetCodenation():
 
   def __init__(self):
-    # self.market = None
-    # self.client = None
     self.path = self.getPath()
-    # self.features_ramo = [
-    #     "de_ramo",
-    #     "setor",
-    #     "nm_divisao",
-    #     "nm_segmento",
-    #   ]
-    # self.features_burocracia = [
-    #       "natureza_juridica_macro",
-    #       "de_natureza_juridica",
-    #       "fl_optante_simples"
-    #   ]
-    # self.features_consolidada = [
-    #       "de_faixa_faturamento_estimado", 
-    #       "de_faixa_faturamento_estimado_grupo",
-    #       "idade_emp_cat"
-    #   ]
-    # self.features_dependecy = [
-    #     "id"
-    #   ]
 
   def getPath(self):
     file_directory = os.path.realpath(__file__)
@@ -37,23 +16,13 @@ class SetCodenation():
 
   def selectSet(self, number = "two", level = "A", full = True):
     client = None
+
     if(full):
       client = pd.read_csv(f"{self.path}/data/datasets/full_client_{number}_{level}.csv", encoding= 'unicode_escape')
     else:
       client = pd.read_csv(f"{self.path}/data/datasets/client_{number}_{level}.csv", encoding= 'unicode_escape', dtype='category')
 
-    # client = client.astype('category')
     return client
-
-  # def getMarket(self):
-  #   pass
-  #   # market = pd.read_csv("../1.Original/estaticos_market.csv")
-  #   # features = self.features_dependecy + self.features_ramo + self.features_burocracia + self.features_consolidada
-    
-  #   # market = market[features]
-  #   # market = market.astype('category')
-    
-  #   # return market
 
 
 class HandlerDataset():
@@ -105,7 +74,6 @@ class HandlerDataset():
       self.client_obj_array.append(obj)
 
     
-
 ## Only for sample debug and tests...
 if __name__ == '__main__':
 
