@@ -8,9 +8,8 @@
 <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
 
 <!-- Generic page styles -->
-<link rel="stylesheet" href="{{ url_for('static', filename='css/client_card.css') }}">
-<link rel="stylesheet" href="{{ url_for('static', filename='css/temp/ka1.css') }}">
-<link rel="stylesheet" href="{{ url_for('static', filename='css/temp/tn5.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/temp/ka6.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/temp/tn7.css') }}">
 <link rel="stylesheet" href="{{ url_for('static', filename='css/temp/ft2.css') }}">
 
 <!-- blueimp Gallery styles -->
@@ -22,7 +21,6 @@
 {% endblock %}
 
 {% block body %}
-
 {% block navbar %}
 <div class="navbar navbar-inverse" role="navigation">
     <div class="container e_nav_links">
@@ -37,19 +35,20 @@
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li><a href="/client_one">Demo Portifolio 1</a></li>
+                <li><a href="/clientone">Demo Portifolio 1</a></li>
             </ul>
             <ul class="nav navbar-nav">
-                <li><a href="/client_two">Demo Portifolio 2</a></li>
+                <li><a href="/clienttwo">Demo Portifolio 2</a></li>
             </ul>
             <ul class="nav navbar-nav">
-                <li><a href="/client_three">Demo Portifolio 3</a></li>
+                <li><a href="/clientthree">Demo Portifolio 3</a></li>
             </ul>
         </div>
     </div>
 </div>
 {% endblock %}
 
+<main id="main_container">
 <div class="header_nivel">
   <h1>NIVEL A</h1>
 </div>
@@ -144,6 +143,7 @@
 {%else%}
 <h1>Não houve match correspodente a tal nivel :(</h1>
 {%endif%}
+</main>
 
 <footer>
   <div id="copyright">
@@ -160,5 +160,5 @@
   </div>
 </footer>
 
-<script src="static/js/temp/as.js"></script>
+<script src="static/js/temp/as3.js"></script>
 {% endblock %}

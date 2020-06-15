@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden !important;
+}
+
 code {
   display: flex;
   align-items: center;
@@ -32,6 +36,10 @@ code {
   direction: rtl;
   width: 80%;
   font-size: 111%;
+}
+
+.how > h2 {
+  margin-bottom: 20px;
 }
 
 h1,h2,h3{

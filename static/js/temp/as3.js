@@ -60,11 +60,23 @@
 
     const clientDataNew = document.getElementById(`${classesArray[g_obj_carousel_model[keyPos]]}`);
 
+    // for(let old of clientDataOld) {
+    //   clientDataOld[old].style.visibility = "hidden";
+    //   clientDataOld[old].style.width = "0px";
+    //   clientDataOld[old].style.height = "0px";
+    //   clientDataOld[old].style.position = "absolute";
+    // }
     clientDataOld.style.visibility = "hidden";
     clientDataOld.style.width = "0px";
     clientDataOld.style.height = "0px";
-    clientDataOld.style.position = "absolute";
+    clientDataOld.style.position = "relative";
 
+    // for(let p_new of clientDataNew) {
+    //   clientDataNew[p_new].style.visibility = "visible";
+    //   clientDataNew[p_new].style.width = "100%";
+    //   clientDataNew[p_new].style.height = "100%";
+    //   clientDataNew[p_new].style.position = "relative";
+    // }
     clientDataNew.style.visibility = "visible";
     clientDataNew.style.width = "100%";
     clientDataNew.style.height = "100%";

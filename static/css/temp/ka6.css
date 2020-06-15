@@ -1,6 +1,10 @@
+h6 {
+  font-size: 14.3px;
+}
+
 #section_nivel {
   display: flex;
-  width: 100vw;
+  width: 85%;
   align-items: center;
   justify-content: center;
   height: 44vw;
@@ -14,6 +18,19 @@
   justify-content: center;
   flex-direction: column;
   width: 100%;
+}
+
+/* #section_nivel > div > h6 {
+  color:blueviolet;
+} */
+
+#main_container {
+  overflow-x: hidden;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .header_nivel {
