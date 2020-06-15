@@ -1,0 +1,41 @@
+:root {
+  --white:#f8f8f8;
+  --blue:#118AB2;
+  --green:#06D6A0;
+  --midnight:#073B4C;
+  font-family: 'Bitter', serif;
+  color: var(--midnight);
+  font-size: 1.1rem;
+}
+
+a {
+  color: var(--midnight);
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+  border-top: var(--midnight) solid 2px;
+}
+
+#social-icons {
+  flex-shrink: 3;
+}
+
+#f-contact {
+  text-align:right;
+}
+
+span {
+  display: block;
+}
+
+.f-bold {
+  font-weight: 600;
+}

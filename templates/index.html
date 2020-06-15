@@ -1,0 +1,132 @@
+{% extends "base.html" %}
+{% block title %}File Uploader{% endblock %}
+
+{% block page_content %}
+<div class="container">
+    <h1>Reconation S.A</h1>
+    <br>
+    <blockquote>
+        <p>
+            Reconation S.A<br>
+            Somos uma empresa responsável por entrega de leads de mercado baseado em seus dados<br>
+            Trazemos assertividade nas indicações com a nossa SUPER engenharia de AI para recomendações.
+        </p>
+    </blockquote>
+    <br>
+</div>
+
+<div class="how">
+    <p>
+    Esse <span>SITE</span> é uma versão demo privada da empresa, agora as perguntas mais importantes...<br>
+    </p>
+    <h2>Como se faz uso da demo aqui?</h2>
+    <p>
+        Temos 3 dataset do nosso cliente Codenation aberta ao público para demonstração, elas são dividas
+        em 3 níveis de recomendações, sendo elas...
+    </p>
+</div>
+
+<div class="nivel_descricao">
+    <ul class="SG">
+        <li class="sgLi">
+            <div class="box">
+                <h3>Nivel A</h3>
+                <ul class="df">
+                    <li>Altamente Recomendável</li>
+                    <li>Nível de satisfação de 80% a 100%</li>
+                    <li>São as empresas que melhor deu match ao seus dados</li>
+                </ul> 
+            </div>
+        </li> 
+        <li class="sgLi">
+            <div class="box">
+                <h3>Nivel B</h3>
+                <ul class="df">
+                    <li>Recomendação Mediana</li>
+                    <li>Nível de satisfação de 40% a 80%</li>
+                    <li>São as empresas que apresentam potencial de match aos seus dados</li>
+                </ul> 
+            </div>
+        </li> 
+        <li class="sgLi">
+            <div class="box">
+                <h3>Nivel C</h3>
+                <ul class="df">
+                    <li>Nada Recomendável</li>
+                    <li>Nível de satisfação de 0% a 40%</li>
+                    <li>São as empresas que não fazem match ao seus dados</li>
+                </ul> 
+            </div>
+        </li> 
+    </ul>
+</div>
+
+<footer>
+    <div id="copyright">
+      <span class="f-bold">&copy; 2020</span>
+      <span>Agloks</span>
+    </div>
+    <div id="social-icons">
+      S
+      A
+    </div>
+    <div id="f-contact">
+      <span class="f-bold">Contato</span>
+      <span><a href="#">saulo_ribas@hotmail.com</a></span>
+    </div>
+  </footer>
+
+<!-- <div class="requisitos">
+    <code><br>
+        id = f32fe23fbce5bd44d74e27647bfcd03d9533f457bd081d23820c8ec811d7d78c <br>
+        nm_divisao = COMERCIO VAREJISTA <br>
+        setor = COMERCIO <br>
+        nm_segmento =  REPARACAO DE VEICULOS AUTOMOTORES E MOTOCICLETAS <br>
+        natureza_juridica_macro = OUTROS <br>
+        de_natureza_juridica = EMPRESA INDIVIDUAL DE RESPONSABILIDADE LIMITADA DE NATUREZA EMPRESARIA <br>
+        fl_optante_simples = True <br>
+        de_faixa_faturamento_estimado = ATE R$ 81.000,00 <br>
+        de_faixa_faturamento_estimado_grupo = ATE R$ 81.000,00 <br>
+        idade_emp_cat = 15 a 20 <br>
+    </code>
+</div> -->
+
+{% endblock %}
+
+{% block scripts %}
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- The jQuery UI widget factory, can be omitted if jQuery UI is already included -->
+<script src="static/js/vendor/jquery.ui.widget.js"></script>
+<!-- The Templates plugin is included to render the upload/download listings -->
+<script src="http://blueimp.github.io/JavaScript-Templates/js/tmpl.min.js"></script>
+<!-- The Load Image plugin is included for the preview images and image resizing functionality -->
+<script src="http://blueimp.github.io/JavaScript-Load-Image/js/load-image.all.min.js"></script>
+<!-- The Canvas to Blob plugin is included for image resizing functionality -->
+<script src="http://blueimp.github.io/JavaScript-Canvas-to-Blob/js/canvas-to-blob.min.js"></script>
+<!-- Bootstrap JS is not required, but included for the responsive demo navigation -->
+<!-- <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script> -->
+<!-- blueimp Gallery script -->
+<script src="http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+<!-- The Iframe Transport is required for browsers without support for XHR file uploads -->
+<script src="static/js/jquery.iframe-transport.js"></script>
+<!-- The basic File Upload plugin -->
+<script src="static/js/jquery.fileupload.js"></script>
+<!-- The File Upload processing plugin -->
+<script src="static/js/jquery.fileupload-process.js"></script>
+<!-- The File Upload image preview & resize plugin -->
+<script src="static/js/jquery.fileupload-image.js"></script>
+<!-- The File Upload audio preview plugin -->
+<script src="static/js/jquery.fileupload-audio.js"></script>
+<!-- The File Upload video preview plugin -->
+<script src="static/js/jquery.fileupload-video.js"></script>
+<!-- The File Upload validation plugin -->
+<script src="static/js/jquery.fileupload-validate.js"></script>
+<!-- The File Upload user interface plugin -->
+<script src="static/js/jquery.fileupload-ui.js"></script>
+<!-- The main application script -->
+<script src="static/js/main.js"></script>
+<!-- The XDomainRequest Transport is included for cross-domain file deletion for IE 8 and IE 9 -->
+<!--[if (gte IE 8)&(lt IE 10)]>
+<script src="js/cors/jquery.xdr-transport.js"></script>
+<![endif]-->
+{% endblock %}
